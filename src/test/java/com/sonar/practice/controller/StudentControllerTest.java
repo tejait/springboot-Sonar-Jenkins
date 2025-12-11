@@ -46,8 +46,8 @@ public class StudentControllerTest {
 
         StudentResponse resp = StudentResponse.builder()
                 .id(1L)
-                .firstName(req.getFirstName())
-                .lastName(req.getLastName())
+              //  .firstName(req.getFirstName())
+              //  .lastName(req.getLastName())
                 .email(req.getEmail())
                 .build();
 
