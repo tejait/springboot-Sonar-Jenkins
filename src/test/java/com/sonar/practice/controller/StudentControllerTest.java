@@ -51,7 +51,7 @@ public class StudentControllerTest {
                 .email(req.getEmail())
                 .build();
 
-        //when(studentService.createStudent(any(StudentRequest.class))).thenReturn(resp);
+        when(studentService.createStudent(any(StudentRequest.class))).thenReturn(resp);
 
         mockMvc.perform(post("/api/students")
                         .contentType(MediaType.APPLICATION_JSON)
