@@ -46,12 +46,12 @@ public class StudentControllerTest {
 
         StudentResponse resp = StudentResponse.builder()
                 .id(1L)
-              //  .firstName(req.getFirstName())
-              //  .lastName(req.getLastName())
+                .firstName(req.getFirstName())
+                .lastName(req.getLastName())
                 .email(req.getEmail())
                 .build();
 
-        when(studentService.createStudent(any(StudentRequest.class))).thenReturn(resp);
+        //when(studentService.createStudent(any(StudentRequest.class))).thenReturn(resp);
 
         mockMvc.perform(post("/api/students")
                         .contentType(MediaType.APPLICATION_JSON)
