@@ -11,7 +11,7 @@ class PracticeApplicationTests {
     private static final Logger logger = LoggerFactory.getLogger(PracticeApplicationTests.class);
 	@Test
 	void contextLoads() {
-       // logger.info("testing log for jenkins first commit");
+        logger.info("testing log for jenkins first commit");
 	}
 
 }
